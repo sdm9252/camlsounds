@@ -1,0 +1,6 @@
+# dune init proj midithing
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/simonmartin/.cache/dune/db
+# Workspace root: /Users/simonmartin/Desktop/Camels/midithing/midithing
+# Auto-detected concurrency: 12

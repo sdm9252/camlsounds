@@ -1,0 +1,4 @@
+(executable
+ (public_name midithing)
+ (name main)
+ (libraries midithing))
