@@ -1,6 +1,22 @@
-# dune init proj midithing
+# dune exec midithing
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Shared cache location: /Users/simonmartin/.cache/dune/db
 # Workspace root: /Users/simonmartin/Desktop/Camels/midithing/midithing
 # Auto-detected concurrency: 12
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /Users/simonmartin/.opam/resolver/bin/ocamlc.opt -config > /var/folders/tx/31mmfp5104zbv3m_3pk5zrsr0000gn/T/dune_15c6af_output
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.midithing.objs/byte -no-alias-deps -opaque -o lib/.midithing.objs/byte/midithing.cmo -c -impl lib/midithing.ml-gen)
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I bin/.main.eobjs/byte -I lib/.midithing.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.midithing.objs/byte -I lib/.midithing.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.midithing.objs/native/midithing.cmx -c -impl lib/midithing.ml-gen)
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.midithing.objs/byte -I lib/.midithing.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/midithing.cmxa lib/.midithing.objs/native/midithing.cmx)
+$ (cd _build/default && /Users/simonmartin/.opam/resolver/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/midithing.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
