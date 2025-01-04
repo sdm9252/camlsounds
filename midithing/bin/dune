@@ -1,4 +1,6 @@
 (executable
- (public_name midithing)
  (name main)
- (libraries midithing))
+ (public_name midithing)
+ (libraries bitstring)
+ (preprocess
+   (pps bitstring.ppx)))
